@@ -27,3 +27,30 @@
 |user_ longitude|double|convert to decimal with 7 precision|No|
 |month |string|None|Yes|
 |date |date|None|Yes|
+
+### **2. Viewership Dataset**
+| Column Names | Data Type | Partition Columns| Transformations|
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|advertising_id|	string	|	No|None|	 
+|channel_genre|string|No|None|	 
+|channel_name|string|No|None|	 
+|city|string|	No|None|	 
+|device|string|No|None|	 
+|device_type|string|No|None	 
+|duration|integer|No|None|	 
+|grid_id|string|No|None|	 
+|language|string|No|None|	 
+|location_category|string|No|None|	
+|location_granularities|string|No|None|	 
+|location_source|Array[String]|No|Convert to a comma-separated string|
+|record_timestamp|bigint|No|None|	 
+|show_genre|string|No|None|	 
+|show_name|string|No|None|	 
+|state|string|No|None|	 
+|user_lat|double|No|Convert to decimal with 7 precision|
+|user_long|double|No|Convert to decimal with 7 precision|
+|month|string|Yes|None	 
+|date|date|Yes|None 
+
+# Project Outline
+
