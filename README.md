@@ -58,7 +58,7 @@
      -> Identified the appropriate AWS services
      -> Understood the data schema
      -> Created a high-level architectural diagram using draw.io 
-     -> The suggested solution was to be scalable and cost-effective
+     -> The suggested solution was to be scalable and cost-effective 
  ### Create S3 buckets for Data Lake
      -> Created three S3 buckets for landing zone, raw zone, and staging zone
      -> Enabled appropriate life-cycle management on these buckets
