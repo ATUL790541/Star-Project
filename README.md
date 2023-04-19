@@ -53,4 +53,31 @@
 |date|date|Yes|None 
 
 # Project Outline
-
+ 
+ ### Understood the business requirement and created a high-level architecture on AWS
+     -> Identified the appropriate AWS services
+     -> Understand the data schema
+     -> Created a high-level architectural diagram using draw.io 
+     -> The suggested solution was to be scalable and cost-effective
+ ### Create S3 buckets for Data Lake
+     -> Created three S3 buckets for landing zone, raw zone, and staging zone.
+     -> Enabled appropriate life-cycle management on these buckets.
+     -> Read & Write access for raw bucket should be limited to a service account for programmatic access only.Used IAM
+     -> Enabled versioning on these buckets
+     -> Prepared sample data in parquet format by referring to the schema.
+### Create an EMR-Spark Job to perform data transformation
+     -> Created a spark job using the programming language you learned.
+     -> This spark job will read data from the raw zone and after the transformation put the data in the staging zone.
+     -> Implemented the logic to mask critical fields 
+     -> Implemented The logic to cast some fields.
+     -> Created an EMR cluster that will be used to submit this spark job.
+     -> Spark configuration should be configurable. The configuration should be read from a file.
+     -> Manually executed the spark job.
+     -> The EMR cluster should terminate after the job execution is done. Used cost-saving measures.
+ 4) Implemented Livy to interact with an EMR cluster over a REST interface
+ 5) Setup Airflow on EC2 using putty terminal
+ 6) Create a high-level DAG in Airflow
+ 7) Create Lambda function to trigger DAG
+ 8) Improve DAG by adding validations & lookup data set 
+ 9) Implement a basic deployment pipeline 
+ 10)Peer review of code, perform unit testing, and document the results
